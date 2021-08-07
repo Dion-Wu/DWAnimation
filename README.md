@@ -15,7 +15,7 @@ add following file to your project.
 ## Usage
 
 ### Simple Animation
-you can creat a pulsing animation like this.
+you can create a pulsing animation like this.
 
 ``` swift
 let pulsing = Pulsing(position: self.view.center, toRadius: 50, color: UIColor.blue.cgColor)
@@ -26,7 +26,7 @@ you can change the animation duration use this property ```animationDuration``` 
 pulsing.animationDuration = 2
 ```
 
-creat a circlePulsing animation like this.
+create a circlePulsing animation like this.
 ``` swift
 let circlePulsing = CirclePulsing(position: self.view.center, toRadius: 300, color: UIColor.blue.cgColor)
 circlePulsing.animationDuration = 2
@@ -47,9 +47,9 @@ you will get a result like this.<br>
 ![](https://github.com/Dion-Wu/DWAnimation/blob/master/DWAnimation-1.gif)  
 
 ### Constant Animation
-also you can creat a constant animation.
+also you can create a constant animation.
 
-first creat two property.
+first create two property.
 ``` swift
 var pulsing: Pulsing!
 var circlePulsing: CirclePulsing!
@@ -57,7 +57,7 @@ var circlePulsing: CirclePulsing!
 
 you can change the animation repeat times use this property ```repeatTimes``` default value is 1.
 
-creat a function like this.
+create a function like this.
 ``` swift
 func pulsingAnimation(repeatTimes: Float, duration: TimeInterval) {
 self.pulsing = Pulsing(position: self.view.center, toRadius: 50, color: UIColor.blue.cgColor)
@@ -77,7 +77,7 @@ run this function.
 self.pulsingAnimation(repeatTimes: Float.infinity, duration: 1)
 ```
 
-creat stop animation function like this.
+create stop animation function like this.
 ``` swift
 func stopAnimation() {
 self.pulsing.removeAllAnimations()
